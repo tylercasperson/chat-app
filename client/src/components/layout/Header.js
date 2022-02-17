@@ -1,14 +1,18 @@
 import React from 'react';
 
-const Header = () => {
+const Header = (props) => {
   return (
     <header className='chat-header'>
       <h1>
         <i className='fas fa-smile'></i> ChatCord
       </h1>
-      <a id='leave-btn' className='btn' href='/'>
-        Leave Room
-      </a>
+      {props.inChat ? (
+        <a id='leave-btn' className='btn' href='/'>
+          Leave Room
+        </a>
+      ) : (
+        ''
+      )}
     </header>
   );
 };

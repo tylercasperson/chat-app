@@ -1,14 +1,14 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import PickAChat from './components/pages/PickAChat';
+import EnterAChat from './components/pages/EnterAChat';
 import Chat from './components/pages/Chat';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<PickAChat />} exact />
+        <Route path='/' element={<EnterAChat />} exact />
         <Route path='/chat' element={<Chat />} />
       </Routes>
     </Router>

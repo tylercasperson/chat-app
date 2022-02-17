@@ -5,8 +5,8 @@ import ChatForm from '../layout/ChatForm';
 
 const Chat = () => {
   return (
-    <div class='chat-container'>
-      <Header />
+    <div className='chat-container'>
+      <Header inChat={true} />
       <SideBar />
       <ChatForm />
     </div>
